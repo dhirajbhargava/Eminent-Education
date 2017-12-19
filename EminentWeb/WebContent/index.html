@@ -1,0 +1,762 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EMINENT - TARGETING EXCELLENCE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+
+  <style>
+  
+#hero {
+	display: table;
+	width: 100%;
+	height: 100vh;
+	background: url(images/hero.jpg) top left;
+ 	background-size: cover;
+ }
+
+#hero .hero-container {
+	background: rgba(0, 0, 0, 0.5);
+	display: table-cell;
+	margin: 0;
+	padding: 0 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#hero h1 {
+	font-size: 48px;
+	font-weight: 700;
+	color: #eee;
+	text-transform: uppercase;
+	margin: 50px 0 20px 0;
+}
+
+#hero h2 {
+	color: #eee;
+	margin-bottom: 50px;
+	font-size: 24px;
+}
+
+  
+  .jumbotron {
+      background-color: white;/*#f4511e;*/
+      color: black;
+      padding: 20px 10px 1px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 5px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  
+  .logo {
+      font-size: 200px;
+	  color: #2E86C1;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+  	/*Gallery */
+  .thumbnail {
+	    padding: 0 0 15px 0;
+	    border: none;
+	    border-radius: 0;
+	}
+	
+	.thumbnail img {
+	    width: 100%;
+	    height: 100%;
+	    margin-bottom: 10px;
+	}
+	/*Carousel */
+	.carousel-control.right, .carousel-control.left {
+	    background-image: none;
+	    color: #f4511e;
+	}
+	
+	.carousel-indicators li {
+	    border-color: #f4511e;
+	}
+	
+	.carousel-indicators li.active {
+	    background-color: #f4511e;
+	}
+	
+	.item h4 {
+	    font-size: 19px;
+	    line-height: 1.375em;
+	    font-weight: 400;
+	    font-style: italic;
+	    margin: 70px 0;
+	}
+	
+	.item span {
+	    font-style: normal;
+	}
+
+	.item img {
+	    font-size: 19px;
+	    line-height: 1.375em;
+	    font-weight: 400;
+	    font-style: italic;
+	    margin: 70px 0;
+	}
+
+/* Pricing */
+.panel {
+    border: 1px solid #86af49;/*#f4511e;*/ 
+    border-radius:0;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-footer .btn:hover {
+    border: 1px solid #f4511e;
+    background-color: #fff !important;
+    color: #f4511e;
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color: #86af49/*#f4511e*/ !important;
+    padding: 5px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.panel-subheading {
+    color: black;
+    background-color: #b5e7a0/*#f4511e*/ !important;
+    padding: 5px;
+    border-bottom: 1px solid transparent;
+}
+
+.panel-footer {
+    background-color: #fff !important;
+}
+
+.panel-footer h3 {
+    font-size: 32px;
+}
+
+.panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.panel-footer .btn {
+    margin: 15px 0;
+    background-color: #f4511e;
+    color: #fff;
+}
+/*Navigation bar*/
+.navbar {
+    margin-bottom: 0;
+    /*background-color: #f4511e;*/
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    /*letter-spacing: 4px;*/
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: black;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+</style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+<!-- Navigation menu -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+		    <a class="navbar-brand" href="#">EMINENT <small>Targeting Excellence</small></a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span> 
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav navbar-right">
+		    <li><a href="#courses">COURSES</a></li>
+		    <li><a href="#about">ABOUT</a></li>
+		    <li><a href="#gallery">GALLERY</a></li>
+		    <li><a href="#contact">CONTACT</a></li>
+		  </ul>
+		</div>
+	</div>
+</nav>
+
+	<section id="hero">
+		<div class="hero-container">
+      		<h1>Eminent Education</h1>
+      		<h2>Helping students improve all aspects of English language proficiency.</h2>
+    	</div>
+	</section>
+
+<div class="jumbotron text-center" style="">
+
+	<!--  <h1 class="text-center">EMINENT <small>Targeting Excellence</small></h1>--> 
+	<!-- <div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10"><img style="width: 100%"src="images/gallery/Facebook profile.jpg" class="img-rounded img-responsive"></div>
+   		<div class="col-sm-1"></div>
+   	</div> -->
+   	<h5><span class="glyphicon glyphicon-map-marker"></span> 303, Rounak Vihar, 3/1, Old Palasia, Indore, India</h5> 
+    <h5><span class="glyphicon glyphicon-phone"></span> +91 99937 47000 and +91 98935 46683 </h5>
+	<h5><span class="glyphicon glyphicon-envelope"></span> eminenteducation@yahoo.com</h5>
+	<a href="https://www.facebook.com/eminenttargetingexcellence/" target="_blank"><i class="fa fa-facebook-official" style="font-size:36px;color:black"></i></a>
+	<a href="https://www.instagram.com/eminenteducation_/" target="_blank"><i class="fa fa-instagram" style="font-size:36px;color:black"></i></a>
+	<a href="https://www.linkedin.com/in/pragya-bhargava-eminent" target="_blank"><i class="fa fa-linkedin-square" style="font-size:36px;color:black"></i></a>
+	<div class="row">
+		<div class="col-xs-6"><h5 class="text-right">Tuesday - Friday    :</h5></div>
+		<div class="col-xs-6"><h5 class="text-left">8.30 AM to 1.30 PM</h5></div>
+   	</div>
+	<div class="row">
+		<div class="col-xs-6"></div>
+		<div class="col-xs-6"><h5 class="text-left">7.30 PM to 10.00 PM (Online sessions only)</h5></div>
+   	</div>
+	
+	<div class="row">
+		<div class="col-xs-6"><h5 class="text-right">Saturday - Sunday   :</h5></div>
+		<div class="col-xs-6"><h5 class="text-left">8.30 AM to 11.30 AM</h5></div>
+   	</div>
+
+	<div class="row">
+		<div class="col-xs-6"></div>
+		<div class="col-xs-6"><h5 class="text-left">7.30 PM to 10.00 PM (Online sessions only)</h5></div>
+   	</div>	
+</div>
+<!-- Courses -->
+<div id="courses" class="container-fluid">
+	<h3 class="text-center">Choose Your Training Program (Click on the program to view details)</h1>
+	<!-- Accordion -->
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+				  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+				  IELTS (Academic and General)</a>
+				</h4>
+			</div>
+		    <div id="collapse1" class="panel-collapse collapse">
+		    	<div class="panel-body">
+					<p class="panel-subheading"><strong>Introduction to IELTS</strong></p>
+					<div class="row">
+					  <div class="col-sm-12">The International English Language Testing System (IELTS) measures the language proficiency of people who want to study or work where English is used as a language of communication. It uses a nine-band scale to clearly identify levels of proficiency, from non-user (band score 1) through to expert (band score 9). IELTS is available in two test versions: Academic - for people applying for higher education or professional registration, and General Training for those migrating to Australia, Canada and the UK, or applying for secondary education, training programmes and work experience in an English-speaking environment. Both versions provide a valid and accurate assessment of the four language skills: listening, reading, writing and speaking. </div>
+					</div>
+					<ul>
+						<li>Academic</li>
+						<p>The IELTS Academic test is for people applying for higher education or professional registration in an English speaking environment. It reflects some of the features of academic language and assesses whether you are ready to begin studying or training.
+	This approach is widely supported by the institutions that recognise IELTS.</p>
+						<li>General</li>
+						<p>The IELTS General Training test is for those who are going to English speaking countries for secondary education, work experience or training programs. It is also a requirement for migration to Australia, Canada, New Zealand and the UK. The test focuses on basic survival skills in broad social and workplace contexts.</p>
+					</ul>
+					<p class="panel-subheading">Course Mode</p>
+					<ul>
+						<li>Classroom</li>
+						<p>Join the classroom sessions today and enjoy face-to-face learning with experienced faculties</p>
+						<li>Online</li>
+						<p>Evening classes suitable for local as well as remote participants who are unable to join classroom sessions due to working hours or college during the day. All you need is an internet connection and a skype id</p>
+		      		</ul>
+					<p class="panel-subheading">Modules</p>
+					<ul>
+						<li>Listening</li>
+						<li>Reading</li>
+						<li>Writing</li>
+						<li>Speaking</li>
+		      		</ul>
+		      	</div>
+		  	</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+		    	<h4 class="panel-title">
+		        	<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Pearson Test of English (PTE)</a></h4>
+		    </div>
+		    <div id="collapse2" class="panel-collapse collapse">
+		    	<div class="panel-body">
+					<p class="panel-subheading"><strong>Introduction to PTE</strong></p>
+					<div class="row">
+					  <div class="col-sm-12">PTE Academic is the world’s leading computer-based test of English for study abroad and immigration. Typically, PTE Academic results are available within five business days. PTE Academic is accepted by thousands of universities worldwide, including prestigious institutions such as Harvard Business School, INSEAD and Yale. PTE Academic is also accepted for visa purposes by the Australian and New Zealand governments.</div>
+					</div>
+					<p class="panel-subheading">Course Mode</p>
+					<ul>
+						<li>Classroom</li>
+						<p>Join the classroom sessions today and enjoy face-to-face learning with experienced faculties</p>
+						<li>Online</li>
+						<p>Evening classes suitable for local as well as remote participants who are unable to join classroom sessions due to working hours or college during the day. All you need is an internet connection and a skype id</p>
+		      		</ul>
+					<p class="panel-subheading">Modules</p>
+					<ul>
+						<li>Listening</li>
+						<li>Reading</li>
+						<li>Writing</li>
+						<li>Speaking</li>
+		      		</ul>
+		      	</div>
+		      </div>
+		</div>
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+				<h4 class="panel-title">
+		        	<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">TOEFL</a>
+		      	</h4>
+			</div>
+			<div id="collapse3" class="panel-collapse collapse">
+				<div class="panel-body">TOEFL content to be added</div>
+			</div>
+		</div>
+		
+		
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+				<h4 class="panel-title">
+		        	<a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Voice and Accent / Call Center Training</a>
+		      	</h4>
+			</div>
+	    	<div id="collapse4" class="panel-collapse collapse">
+	    	   	<div class="panel-body">
+					<p class="panel-subheading">Voice and Accent</p>
+					<p>The program focuses on speech correction, reducing 'MTI' and training candidates on understanding and speaking in a foreign accent. This is a very useful for course for candidates working in companies that talk frequently with customers from US, Austratlia, UK and other Europen countries</p>
+					<ul>
+						<li>Voice modulation</li>
+						<li>Pitch and tone training</li>
+						<li>MTI removal (sh, s, zh, z)</li>
+						<li>Vowel and consonant sounds</li>
+						<li>Phenomena of phonetics</li>
+						<li>Accent  Neutralization (Global accent)</li>
+						<li>Plosives and sounds (Nasal and Throaty)</li>
+		      		</ul>
+					<p class="panel-subheading">Call Center Training</p>	      		
+					<p>The course is designed to train the candidates aspiring to work in Local and International call centers, on call center processes and practices.</p>
+					<ul>
+						<li>Introduction to call centers</li>
+						<li>Culture in call centers</li>
+						<li>Terminology</li>
+						<li>Difference in UK and US English</li>
+						<li>Time zones</li>
+						<li>Geographical boundaries</li>
+						<li>American slangs</li>
+		      		</ul>
+				</div>
+	      	</div>
+		</div>
+
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+				<h4 class="panel-title">
+		        	<a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Spoken English</a>
+		      	</h4>
+			</div>
+			<div id="collapse5" class="panel-collapse collapse">
+				<div class="panel-body">
+					<p class="panel-subheading">Spoken English Basic</p>
+					<p>This is a beginer's level course that also focuses on Grammer correction and Vocabulary in addition to building basic level of confidence</p>
+					<ul>
+						<li>Improve accuracy in Grammar</li>
+						<li>Expand Vocabulary</li>
+						<li>Development of reading skills</li>
+						<li>Correct pronunciation</li>
+						<li>Audio session for effective listening</li>
+						<li>Communicate in English on day-to-day situation</li>
+		      		</ul>
+					<p class="panel-subheading">Spoken English Advanced</p>	      		
+					<p>The advanced level course is designed to enhance the speaking skills and increasing the confidence during public speaking</p>
+					<ul>
+						<li>Construction and usage of complex sentences</li>
+						<li>Advance vocabulary</li>
+						<li>Appropriate usage of idiomatic phrases</li>
+						<li>Improve public speaking skills</li>
+						<li>Extempore sessions, group activities and flip-overs</li>
+						<li>Audio visual aids</li>
+		      		</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+				<h4 class="panel-title">
+		        	<a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Personality Development</a>
+		      	</h4>
+			</div>
+			<div id="collapse6" class="panel-collapse collapse">
+				<div class="panel-body">Personality development content to be added</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+				<h4 class="panel-title">
+		        	<a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Communicaiton Skills and GD</a>
+		      	</h4>
+			</div>
+			<div id="collapse7" class="panel-collapse collapse">
+				<div class="panel-body">Personality development content to be added</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+				<h4 class="panel-title">
+		        	<a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Interview Techniques and Advance GD</a>
+		      	</h4>
+			</div>
+			<div id="collapse8" class="panel-collapse collapse">
+				<div class="panel-body">Personality development content to be added</div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+	<h1 class="text-center">About Us</h1>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="row">
+				<div class="col-sm-12">
+	    			<img src="images/whoweare.jpg" class="img-responsive">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+				    <h2 class="text-center">Who We Are</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+				    <p class="text-justify">Eminent Education provides a wide range of quality English language courses, expert teaching and excellent student services. Our courses and teaching are designed to provide effective training for students who need English for their work or study. We are committed to give all of our students the best teaching and learning facilities, with excellent courses in a friendly but professional environment. We are committed to providing students a great and a different learning experience with ensured results. Whether you wish to start learning English as a Beginner or you are a Student, Executive, House wife, we have the right English speaking course for you, enabling you to speak fluent English with neutral accent guaranteed!IELTS and TOEFL Training modules are effective and excellent scores are achieved by the students, who are studying and working at various locations worldwide. We understand that everyone is unique with different needs and different goals. From your first contact with us, we will provide you with individual attention to help you to achieve your goals. We look forward to welcoming you to Eminent Education. </p>
+				</div>
+			</div>					
+		</div>
+		<div class="col-sm-4">
+			<div class="row">
+				<div class="col-sm-12">
+					<img src="images/whatweoffer.jpg" class="img-responsive">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<h2 class="text-center">What We Offer</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<ul>
+						<li>A friendly, caring and safe learning environment</li>
+						<li>Weekend classes for working professionals</li>
+						<li>Tie up with premium Consultats providing guidance to students planning to study overseas</li>
+						<li>Wide variety of English language courses</li>
+						<li>Experienced and professional trainers</li>
+						<li>Spacious and friendly training center</li>
+						<li>Great location (2 minutes drive from Palasia sqaure)</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="row">
+				<div class="col-sm-12">
+					<img src="https://s3.amazonaws.com/eminenttestbucket/images/courses.jpg" class="img-responsive padding:50px">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+				    <h2>Courses Offered</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+				    <h4>Specialized Classroom courses </h4>      
+						<ul>
+						<li>IELTS</li>
+						<li>PTE</li>
+						<li>TOEFL</li>
+						<li>Voice And Accent / Call Center Training</li>
+						<li>Spoken English Basic and Advance Courses</li>
+						<li>Group Discussions</li>
+						<li>Interview Techniques and Advance GDCommunication skills</li>
+						<li>Personality Development</li>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h2 class="text-center">What our customers say</h2>
+	<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+	  	<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		    <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+		    </div>
+		    <div class="item">
+		      <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+		    </div>
+		    <div class="item">
+		      <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+		    </div>
+		  </div>
+		
+		  <!-- Left and right controls -->
+		  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+	</div>    
+
+
+</div>
+
+<!-- Gallery --> 
+<div id="gallery" class="container-fluid text-center">
+	<h1 class="text-center">Gallery</h1>
+	<!-- 
+		<div class="row text-center">
+		<div class="col-sm-4">
+	    	<div class="thumbnail">
+	        	<img src="images/gallery/Institute 1.jpg" alt="Paris">
+	        	<p><strong>Paris</strong></p>
+			</div>
+	    </div>
+	    <div class="col-sm-4">
+	    	<div class="thumbnail">
+	        	<img src="images/gallery/Institute 2.jpg" alt="New York">
+	        	<p><strong>New York</strong></p>
+	      	</div>
+	    </div>
+	    <div class="col-sm-4">
+	    	<div class="thumbnail">
+	        	<img src="images/gallery/Institute 3.jpg" alt="San Francisco">
+	        	<p><strong>San Francisco</strong></p>
+	      	</div>
+	    </div>
+		<div class="row text-center">
+			<div class="col-sm-4">
+		    	<div class="thumbnail">
+		        	<img src="images/gallery/Institute 4.jpg" alt="Paris">
+		        	<p><strong>Paris</strong></p>
+		      	</div>
+		    </div>
+		    <div class="col-sm-4">
+		    	<div class="thumbnail">
+		        	<img src="images/gallery/Institute 6.jpg" alt="New York">
+		        	<p><strong>New York</strong></p>
+		      	</div>
+		    </div>
+		    <div class="col-sm-4">
+		    	<div class="thumbnail">
+		        	<img src="images/gallery/Institute 7.jpg" alt="San Francisco">
+		        	<p><strong>San Francisco</strong></p>
+		      	</div>
+		    </div>
+		</div>
+	</div>
+-->
+
+	<div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+		  <li data-target="galleryCarousel" data-slide-to="0" class="active"></li>
+		  <li data-target="galleryCarousel" data-slide-to="1"></li>
+		  <li data-target="galleryCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<div class="row">
+		    <div class="col-sm-2"></div>
+		    <div class="col-sm-8">
+			<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+					  <img src="images/gallery/Institute 1.jpg" alt="Los Angeles" width="100%">
+					</div>
+					
+					<div class="item">
+					  <img src="images/gallery/Institute 2.jpg" alt="Chicago" width="100%">
+					</div>
+					
+					<div class="item">
+					  <img src="images/gallery/Institute 3.jpg" alt="New York" width="100%">
+					</div>
+					
+					<div class="item active">
+					  <img src="images/gallery/Institute 4.jpg" alt="Los Angeles" width="100%">
+					</div>
+					
+					<div class="item">
+					  <img src="images/gallery/Institute 6.jpg" alt="Chicago" width="100%">
+					</div>
+					
+					<div class="item">
+					  <img src="images/gallery/Institute 7.jpg" alt="New York" width="100%">
+					</div>
+				</div>
+			</div>
+		    <div class="col-sm-2"></div>				
+		</div>
+	
+	  <!-- Left and right controls -->
+	  <a class="left carousel-control" href="#galleryCarousel" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#galleryCarousel" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+
+</div>   
+
+<!-- Contact us -->
+<div id="contact" class="container-fluid">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Indore, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 99937 47000 and +91 98935 46683 </p>
+      <p><span class="glyphicon glyphicon-envelope"></span> eminenteducation@yahoo.com</p> 
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+<!-- Add Google Maps -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1840.0721590870212!2d75.88965175805053!3d22.72287667030443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd370497ffd1%3A0xea5f32f7abadaee0!2sRaunak+Vihar!5e0!3m2!1sen!2sin!4v1510420852973" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(22.7225216,75.8911087,17);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</body>
+</html>
